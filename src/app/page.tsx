@@ -4,6 +4,7 @@ import { Stats } from "@/components/landing/Stats";
 import { Features } from "@/components/landing/Features";
 import { ModelsCatalog } from "@/components/landing/ModelsCatalog";
 import { ProductPreview } from "@/components/landing/ProductPreview";
+import { WhyChoose } from "@/components/landing/WhyChoose";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Features />
         <ModelsCatalog />
         <ProductPreview />
+        <WhyChoose />
       </main>
     </div>
   );
