@@ -127,6 +127,52 @@
   --sidebar-ring: var(--echo-azure);
 }
 
+@layer utilities {
+  .animate-gradient-x {
+    background-size: 200% auto;
+    animation: gradient-pan 6s linear infinite;
+  }
+  @keyframes gradient-pan {
+    to {
+      background-position: -200% center;
+    }
+  }
+
+  .animate-orb-pulse {
+    will-change: transform;
+    animation: orb-drift 16s ease-in-out infinite alternate;
+  }
+  @keyframes orb-drift {
+    from {
+      transform: translate3d(-5%, -4%, 0) scale(0.92);
+    }
+    to {
+      transform: translate3d(5%, 4%, 0) scale(1.06);
+    }
+  }
+
+  .animate-shimmer {
+    animation: shimmer 4s ease-in-out infinite;
+  }
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-140%);
+    }
+    55%,
+    100% {
+      transform: translateX(260%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-gradient-x,
+    .animate-orb-pulse,
+    .animate-shimmer {
+      animation: none;
+    }
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
