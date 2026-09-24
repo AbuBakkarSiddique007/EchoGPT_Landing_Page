@@ -166,6 +166,11 @@
     }
   }
 
+  .bg-dot-grid {
+    background-image: radial-gradient(var(--dot-grid) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .animate-gradient-x,
     .animate-orb-pulse,

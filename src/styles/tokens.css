@@ -47,6 +47,7 @@
   --echo-aura-violet: rgba(118, 80, 236, 0.2);
   --echo-aura-azure: rgba(73, 121, 251, 0.14);
   --echo-aura-magenta: rgba(247, 48, 110, 0.07);
+  --dot-grid: rgba(255, 255, 255, 0.05);
 
   --bg-app: #0a0713;
   --bg-sidebar: #0e0a1a;
@@ -89,6 +90,7 @@
   --echo-aura-violet: rgba(118, 80, 236, 0.06);
   --echo-aura-azure: rgba(73, 121, 251, 0.05);
   --echo-aura-magenta: rgba(247, 48, 110, 0.025);
+  --dot-grid: rgba(15, 23, 42, 0.06);
 
   --bg-app: #f8fafc;
   --bg-sidebar: #f1f5f9;
@@ -116,6 +118,7 @@
   --echo-aura-violet: rgba(118, 80, 236, 0.25);
   --echo-aura-azure: rgba(73, 121, 251, 0.18);
   --echo-aura-magenta: rgba(247, 48, 110, 0.08);
+  --dot-grid: rgba(255, 255, 255, 0.045);
 
   --bg-app: #000000;
   --bg-sidebar: #050508;
