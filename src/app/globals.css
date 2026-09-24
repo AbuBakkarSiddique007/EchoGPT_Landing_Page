@@ -8,6 +8,8 @@
 @theme inline {
   --color-background: var(--bg-app);
   --color-foreground: var(--text-primary);
+  --color-surface: var(--bg-surface);
+  --color-surface-elev: var(--bg-surface-elev);
   --font-sans: var(--font-plus-jakarta-sans);
   --font-mono: var(--font-jetbrains-mono);
   --font-heading: var(--font-plus-jakarta-sans);
