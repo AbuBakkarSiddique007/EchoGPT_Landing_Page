@@ -3,6 +3,7 @@ import { Hero } from "@/components/landing/Hero";
 import { Stats } from "@/components/landing/Stats";
 import { Features } from "@/components/landing/Features";
 import { ModelsCatalog } from "@/components/landing/ModelsCatalog";
+import { ProductPreview } from "@/components/landing/ProductPreview";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Stats />
         <Features />
         <ModelsCatalog />
+        <ProductPreview />
       </main>
     </div>
   );
