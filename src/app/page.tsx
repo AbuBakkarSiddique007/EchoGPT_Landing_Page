@@ -6,6 +6,7 @@ import { ModelsCatalog } from "@/components/landing/ModelsCatalog";
 import { ProductPreview } from "@/components/landing/ProductPreview";
 import { WhyChoose } from "@/components/landing/WhyChoose";
 import { Pricing } from "@/components/landing/Pricing";
+import { Faq } from "@/components/landing/Faq";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <ProductPreview />
         <WhyChoose />
         <Pricing />
+        <Faq />
       </main>
     </div>
   );
