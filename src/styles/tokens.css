@@ -44,16 +44,20 @@
   --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.55);
   --shadow-glow: 0 0 24px -2px rgba(118, 80, 236, 0.45);
 
-  --bg-app: #09080e;
-  --bg-sidebar: #0f0e18;
-  --bg-surface: #151324;
-  --bg-surface-elev: #1a172e;
-  --bg-input: #18152c;
-  --bg-hover: rgba(139, 92, 246, 0.08);
-  --bg-active: rgba(139, 92, 246, 0.16);
+  --echo-aura-violet: rgba(118, 80, 236, 0.2);
+  --echo-aura-azure: rgba(73, 121, 251, 0.14);
+  --echo-aura-magenta: rgba(247, 48, 110, 0.07);
 
-  --border-subtle: #231f3b;
-  --border-strong: #342d54;
+  --bg-app: #0a0713;
+  --bg-sidebar: #0e0a1a;
+  --bg-surface: #141023;
+  --bg-surface-elev: #181330;
+  --bg-input: #171230;
+  --bg-hover: rgba(139, 92, 246, 0.1);
+  --bg-active: rgba(139, 92, 246, 0.2);
+
+  --border-subtle: #251d42;
+  --border-strong: #372a61;
   --border-glow: rgba(139, 92, 246, 0.4);
 
   --text-primary: #f8fafc;
@@ -82,6 +86,10 @@
 }
 
 [data-theme="light"] {
+  --echo-aura-violet: rgba(118, 80, 236, 0.06);
+  --echo-aura-azure: rgba(73, 121, 251, 0.05);
+  --echo-aura-magenta: rgba(247, 48, 110, 0.025);
+
   --bg-app: #f8fafc;
   --bg-sidebar: #f1f5f9;
   --bg-surface: #ffffff;
@@ -105,6 +113,10 @@
 }
 
 [data-theme="oled"] {
+  --echo-aura-violet: rgba(118, 80, 236, 0.25);
+  --echo-aura-azure: rgba(73, 121, 251, 0.18);
+  --echo-aura-magenta: rgba(247, 48, 110, 0.08);
+
   --bg-app: #000000;
   --bg-sidebar: #050508;
   --bg-surface: #0a0a0f;
