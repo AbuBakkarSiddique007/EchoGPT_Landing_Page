@@ -7,6 +7,7 @@ import { useState } from "react";
 import { buttonVariants } from "@/components/ui/button";
 import { ChromeIcon } from "@/components/landing/ChromeIcon";
 import { ThemeToggle } from "@/components/landing/ThemeToggle";
+import { ADD_TO_CHROME_HREF, API_DOCS_HREF, WEB_APP_HREF } from "@/lib/links";
 import { cn } from "@/lib/utils";
 
 type NavLink = { label: string; href: string; external?: boolean };
@@ -16,11 +17,8 @@ const NAV_LINKS: NavLink[] = [
   { label: "Models (38+)", href: "#models" },
   { label: "Compare", href: "#compare" },
   { label: "Pricing", href: "#pricing" },
-  { label: "API Docs", href: "https://api.echogpt.live", external: true },
+  { label: "API Docs", href: API_DOCS_HREF, external: true },
 ];
-
-const ADD_TO_CHROME_HREF = "https://chromewebstore.google.com";
-const WEB_APP_HREF = "#";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
