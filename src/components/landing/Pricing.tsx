@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Check, Rocket, Sparkles, Terminal } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { API_DOCS_HREF, WEB_APP_HREF } from "@/lib/links";
+import { PRICING_HREF } from "@/lib/links";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { buttonVariants } from "@/components/ui/button";
@@ -44,7 +44,7 @@ const TIERS: Tier[] = [
       },
     ],
     cta: "Get Started Free",
-    href: WEB_APP_HREF,
+    href: PRICING_HREF,
   },
   {
     icon: Sparkles,
@@ -70,7 +70,7 @@ const TIERS: Tier[] = [
       },
     ],
     cta: "Start 7-Day Free Trial",
-    href: WEB_APP_HREF,
+    href: PRICING_HREF,
     featured: true,
   },
   {
@@ -91,8 +91,8 @@ const TIERS: Tier[] = [
         ],
       },
     ],
-    cta: "Contact Sales & Get API Key",
-    href: API_DOCS_HREF,
+    cta: "See Developer Pricing",
+    href: PRICING_HREF,
   },
 ];
 
@@ -158,7 +158,12 @@ export function Pricing() {
                     </span>
                   </div>
 
-                  <h3 className="mt-5 font-heading text-lg font-bold text-foreground">
+                  <h3
+                    className={cn(
+                      "mt-5 font-heading text-lg font-bold",
+                      tier.featured ? "text-primary-foreground" : "text-foreground"
+                    )}
+                  >
                     {tier.name}
                   </h3>
                   <p
