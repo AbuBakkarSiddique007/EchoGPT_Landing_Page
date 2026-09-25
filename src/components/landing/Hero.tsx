@@ -3,9 +3,8 @@ import { Sparkles } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { ChromeIcon } from "@/components/landing/ChromeIcon";
 import { HeroPreview } from "@/components/landing/HeroPreview";
+import { ADD_TO_CHROME_HREF, WEB_APP_HREF } from "@/lib/links";
 import { cn } from "@/lib/utils";
-
-const ADD_TO_CHROME_HREF = "https://chromewebstore.google.com";
 
 export function Hero() {
   return (
@@ -54,7 +53,7 @@ export function Hero() {
               Add to Chrome
             </Link>
             <Link
-              href="#"
+              href={WEB_APP_HREF}
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
                 "h-12 justify-center rounded-full border-[var(--border-glow)] px-6 text-base transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-ring hover:shadow-[var(--shadow-glow)] sm:w-auto"

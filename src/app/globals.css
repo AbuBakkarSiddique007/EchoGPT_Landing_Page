@@ -8,6 +8,8 @@
 @theme inline {
   --color-background: var(--bg-app);
   --color-foreground: var(--text-primary);
+  --color-surface: var(--bg-surface);
+  --color-surface-elev: var(--bg-surface-elev);
   --font-sans: var(--font-plus-jakarta-sans);
   --font-mono: var(--font-jetbrains-mono);
   --font-heading: var(--font-plus-jakarta-sans);
@@ -164,11 +166,21 @@
     }
   }
 
+  .bg-dot-grid {
+    background-image: radial-gradient(var(--dot-grid) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .animate-gradient-x,
     .animate-orb-pulse,
     .animate-shimmer {
       animation: none;
+    }
+
+    [data-slot="accordion-content"] {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
     }
   }
 }
