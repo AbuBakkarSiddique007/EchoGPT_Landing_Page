@@ -4,6 +4,7 @@ import {
   ADD_TO_CHROME_HREF,
   API_REFERENCE_HREF,
   DOCS_HREF,
+  GITHUB_HREF,
   WEB_APP_HREF,
 } from "@/lib/links";
 
@@ -26,22 +27,12 @@ const MODEL_LINKS = [
 const DEV_LINKS = [
   { label: "API Reference", href: API_REFERENCE_HREF },
   { label: "Documentation", href: DOCS_HREF },
-  { label: "GitHub" },
-  { label: "System Status" },
-];
-
-const COMPANY_LINKS = [
-  { label: "Privacy Policy" },
-  { label: "Terms of Service" },
-  { label: "Discord" },
-  { label: "Twitter/X" },
+  { label: "GitHub", href: GITHUB_HREF },
 ];
 
 const CONNECT_LINKS = [
   { label: "Discord", href: "https://discord.com/invite/JG8SXMtaeH" },
   { label: "Facebook", href: "https://www.facebook.com/echogptlive" },
-  { label: "YouTube" },
-  { label: "LinkedIn" },
 ];
 
 function FooterColumn({
@@ -92,7 +83,7 @@ export function Footer() {
       className="border-t border-border bg-background/40 pb-10"
     >
       <div className="mx-auto max-w-6xl px-4 pt-16 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-[1.2fr_1fr_1fr_1fr_1fr_1fr]">
+        <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-[1.2fr_1fr_1fr_1fr_1fr]">
           <div className="col-span-2 sm:col-span-3 lg:col-span-1">
             <Link
               href="#top"
@@ -124,7 +115,6 @@ export function Footer() {
           <FooterColumn title="Product" links={PRODUCT_LINKS} />
           <FooterColumn title="Models" links={MODEL_LINKS} />
           <FooterColumn title="Developers" links={DEV_LINKS} />
-          <FooterColumn title="Company" links={COMPANY_LINKS} />
           <FooterColumn title="Connect" links={CONNECT_LINKS} />
         </div>
 
