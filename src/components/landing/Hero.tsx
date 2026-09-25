@@ -25,7 +25,7 @@ export function Hero() {
       <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-14">
         <div className="flex max-w-xl flex-col items-start gap-5">
           <h1 className="flex flex-col text-balance text-4xl font-bold leading-[1.12] tracking-[-0.02em] text-foreground sm:text-5xl">
-            <span className="animate-gradient-x bg-clip-text text-5xl font-extrabold tracking-[-0.03em] text-transparent sm:text-6xl">
+            <span className="animate-gradient-x bg-clip-text text-5xl font-extrabold tracking-[-0.03em] text-transparent [background-image:var(--echo-gradient-primary)] sm:text-6xl">
               EchoGPT
             </span>
             <span className="mt-2 sm:mt-3">One Chat Interface.</span>
