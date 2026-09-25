@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { Sparkles } from "lucide-react";
-import { buttonVariants } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { ChromeIcon } from "@/components/landing/ChromeIcon";
 import { HeroPreview } from "@/components/landing/HeroPreview";
 import { ADD_TO_CHROME_HREF, WEB_APP_HREF } from "@/lib/links";
-import { cn } from "@/lib/utils";
 
 export function Hero() {
   return (
@@ -24,6 +24,13 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-14">
         <div className="flex max-w-xl flex-col items-start gap-5">
+          <Badge
+            variant="outline"
+            className="gap-2 rounded-full border-[var(--border-glow)] bg-surface/70 px-3 py-1 text-xs font-medium text-foreground/75 shadow-sm backdrop-blur-sm"
+          >
+            <span className="size-1.5 animate-pulse rounded-full bg-emerald-400" />
+            One workspace for 38+ frontier models
+          </Badge>
           <h1 className="flex flex-col text-balance text-4xl font-bold leading-[1.12] tracking-[-0.02em] text-foreground sm:text-5xl">
             <span className="animate-gradient-x bg-clip-text text-5xl font-extrabold tracking-[-0.03em] text-transparent [background-image:var(--echo-gradient-primary)] sm:text-6xl">
               EchoGPT
@@ -40,29 +47,35 @@ export function Hero() {
           </p>
 
           <div className="mt-2 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:gap-4">
-            <Link
-              href={ADD_TO_CHROME_HREF}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cn(
-                buttonVariants({ variant: "default", size: "lg" }),
-                "h-12 justify-center rounded-full px-6 text-base [background-image:var(--echo-gradient-primary)] text-white shadow-[var(--shadow-glow)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:brightness-110 hover:shadow-lg active:scale-[0.98] sm:w-auto"
-              )}
+            <Button
+              render={
+                <Link
+                  href={ADD_TO_CHROME_HREF}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                />
+              }
+              nativeButton={false}
+              size="lg"
+              className="h-12 w-full justify-center rounded-full border-primary/30 bg-primary px-6 text-base text-primary-foreground shadow-[var(--shadow-glow)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-lg active:scale-[0.98] sm:w-auto"
             >
               <ChromeIcon className="size-4" />
               Add to Chrome
-            </Link>
-            <Link
-              href={WEB_APP_HREF}
-              className={cn(
-                buttonVariants({ variant: "outline", size: "lg" }),
-                "h-12 justify-center rounded-full border-[var(--border-glow)] px-6 text-base transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-ring hover:shadow-[var(--shadow-glow)] sm:w-auto"
-              )}
+            </Button>
+            <Button
+              render={<Link href={WEB_APP_HREF} />}
+              nativeButton={false}
+              variant="outline"
+              size="lg"
+              className="h-12 w-full justify-center rounded-full border-[var(--border-glow)] bg-surface/60 px-6 text-base transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-ring hover:bg-muted hover:shadow-[var(--shadow-glow)] sm:w-auto"
             >
               <Sparkles className="size-4 text-accent-foreground" />
               Try EchoGPT in Browser
-            </Link>
+            </Button>
           </div>
+          <p className="-mt-2 text-xs text-foreground/45">
+            No app switching. Compare, create, and ship from one place.
+          </p>
         </div>
 
         <HeroPreview />

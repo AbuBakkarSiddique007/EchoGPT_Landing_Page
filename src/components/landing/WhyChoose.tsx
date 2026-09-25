@@ -95,8 +95,8 @@ export function WhyChoose() {
     <section id="compare" className="scroll-mt-24 px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto flex max-w-2xl flex-col items-center gap-3 text-center">
-          <span className="text-xs font-semibold tracking-[0.08em] text-accent-foreground uppercase">
-            Why Echo GPT
+          <span className="font-mono text-xs tracking-[0.22em] text-accent-foreground uppercase">
+            {"// Why Echo GPT"}
           </span>
           <h2 className="text-balance text-3xl font-bold tracking-[-0.02em] text-foreground sm:text-4xl">
             Every model. One subscription.
