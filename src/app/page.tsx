@@ -8,6 +8,7 @@ import { WhyChoose } from "@/components/landing/WhyChoose";
 import { Pricing } from "@/components/landing/Pricing";
 import { Faq } from "@/components/landing/Faq";
 import { Testimonials } from "@/components/landing/Testimonials";
+import { FinalCta } from "@/components/landing/FinalCta";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Pricing />
         <Faq />
         <Testimonials />
+        <FinalCta />
       </main>
     </div>
   );
