@@ -70,18 +70,23 @@ const ROWS: Row[] = [
 
 function StatusCell({ value }: { value: "yes" | "partial" | "no" }) {
   const Icon = value === "yes" ? Check : value === "partial" ? Minus : X;
+  const label =
+    value === "yes" ? "Yes" : value === "partial" ? "Partially supported" : "No";
   return (
-    <Icon
-      aria-hidden
-      className={cn(
-        "size-4",
-        value === "yes"
-          ? "text-brand"
-          : value === "partial"
-            ? "text-azure"
-            : "text-foreground/30"
-      )}
-    />
+    <span className="inline-flex items-center justify-center">
+      <Icon
+        aria-hidden
+        className={cn(
+          "size-4",
+          value === "yes"
+            ? "text-brand"
+            : value === "partial"
+              ? "text-azure"
+              : "text-foreground/30"
+        )}
+      />
+      <span className="sr-only">{label}</span>
+    </span>
   );
 }
 
