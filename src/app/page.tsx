@@ -7,6 +7,7 @@ import { ProductPreview } from "@/components/landing/ProductPreview";
 import { WhyChoose } from "@/components/landing/WhyChoose";
 import { Pricing } from "@/components/landing/Pricing";
 import { Faq } from "@/components/landing/Faq";
+import { Testimonials } from "@/components/landing/Testimonials";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <WhyChoose />
         <Pricing />
         <Faq />
+        <Testimonials />
       </main>
     </div>
   );
