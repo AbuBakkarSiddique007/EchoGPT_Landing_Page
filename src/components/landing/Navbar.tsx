@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BookOpen, ChevronDown, ExternalLink, LogIn, Menu, Sparkles, X } from "lucide-react";
-import { useState } from "react";
+import { useState, type MouseEvent } from "react";
 import { buttonVariants } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -33,11 +33,19 @@ const NAV_LINKS: NavLink[] = [
 export function Navbar() {
   const [open, setOpen] = useState(false);
 
+  const handleHomeClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    setOpen(false);
+    window.history.pushState(null, "", "#top");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/95 shadow-[0_12px_32px_-24px_rgba(0,0,0,0.8)] backdrop-blur-xl">
       <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         <Link
           href="#top"
+          onClick={handleHomeClick}
           className="group flex shrink-0 items-center gap-2.5 rounded-full focus-visible:ring-2 focus-visible:ring-ring"
           aria-label="EchoGPT - Home"
         >
@@ -72,6 +80,7 @@ export function Navbar() {
               href={link.href}
               target={link.external ? "_blank" : undefined}
               rel={link.external ? "noopener noreferrer" : undefined}
+              onClick={link.href === "#top" ? handleHomeClick : undefined}
               className="group relative whitespace-nowrap rounded-full px-3 py-1.5 text-xs font-medium tracking-[0.01em] text-foreground/65 transition-all duration-300 ease-out after:absolute after:bottom-1 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:rounded-full after:bg-accent-foreground after:transition-[width] after:duration-300 after:ease-out hover:bg-muted/80 hover:text-foreground hover:after:w-1/2 focus-visible:ring-2 focus-visible:ring-ring sm:px-4 sm:text-sm"
             >
               {link.label}
@@ -208,7 +217,11 @@ export function Navbar() {
                 href={link.href}
                 target={link.external ? "_blank" : undefined}
                 rel={link.external ? "noopener noreferrer" : undefined}
-                onClick={() => setOpen(false)}
+                onClick={
+                  link.href === "#top"
+                    ? handleHomeClick
+                    : () => setOpen(false)
+                }
                 className="rounded-md px-3 py-2 text-sm font-medium text-foreground/70 transition-all duration-200 ease-out hover:translate-x-0.5 hover:bg-muted hover:text-foreground"
               >
                 {link.label}
