@@ -11,7 +11,7 @@ export function Hero() {
     <section className="relative flex min-h-[calc(100svh-4rem)] flex-col justify-center overflow-hidden px-4 pt-8 pb-16 text-left sm:px-6 sm:pt-16 sm:pb-20 lg:px-8 lg:pt-24 lg:pb-24">
       <div
         aria-hidden
-        className="pointer-events-none absolute left-1/2 top-[-16rem] -z-10 h-[44rem] w-[44rem] -translate-x-1/2 rounded-full blur-2xl [background:radial-gradient(circle,var(--echo-brand-glow),transparent_65%)]"
+        className="pointer-events-none absolute left-1/2 top-[-16rem] -z-10 h-[44rem] w-[min(44rem,100vw)] -translate-x-1/2 rounded-full blur-2xl [background:radial-gradient(circle,var(--echo-brand-glow),transparent_65%)]"
       />
       <div
         aria-hidden

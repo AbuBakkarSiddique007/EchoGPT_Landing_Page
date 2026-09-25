@@ -112,7 +112,7 @@ export function WhyChoose() {
         <div className="mt-8 mx-auto max-w-5xl">
           <Card className="overflow-hidden transition-all duration-300 hover:border-[var(--border-glow)] hover:shadow-[var(--shadow-glow)]">
             <div className="overflow-x-auto">
-              <table className="w-full min-w-[42rem] border-collapse text-sm">
+              <table className="w-full min-w-0 table-fixed border-collapse break-words text-sm max-sm:text-xs max-sm:[&_td]:px-2 max-sm:[&_th]:px-2 sm:min-w-[42rem] sm:table-auto">
                 <thead>
                   <tr className="border-b border-border/60">
                     <th className="px-4 py-4 text-left text-xs font-medium tracking-[0.08em] text-muted-foreground uppercase">
@@ -121,9 +121,9 @@ export function WhyChoose() {
                     {HERO_COLUMNS.map((name, i) => (
                       <th
                         key={name}
-                        className={cn("px-4 py-4 text-left", i === 0 && "bg-primary/5")}
+                        className={cn("min-w-0 px-4 py-4 text-left", i === 0 && "bg-primary/5")}
                       >
-                        <div className="flex items-center gap-2">
+                        <div className="flex min-w-0 flex-wrap items-center gap-2">
                           {i === 0 ? (
                             <Badge className="gap-1">
                               <Crown className="size-3" />

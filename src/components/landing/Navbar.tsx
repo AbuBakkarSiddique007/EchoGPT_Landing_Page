@@ -41,7 +41,7 @@ export function Navbar() {
           />
         </Link>
 
-        <nav aria-label="Main" className="hidden items-center gap-7 md:flex">
+        <nav aria-label="Main" className="hidden items-center gap-6 md:flex">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.label}
@@ -60,7 +60,7 @@ export function Navbar() {
             href="#"
             className={cn(
               buttonVariants({ variant: "ghost", size: "sm" }),
-              "gap-1.5 text-foreground/70 transition-all duration-300 hover:-translate-y-0.5 hover:text-foreground"
+              "hidden gap-1.5 text-foreground/70 transition-all duration-300 hover:-translate-y-0.5 hover:text-foreground lg:inline-flex"
             )}
           >
             <LogIn className="size-4" />
@@ -82,7 +82,7 @@ export function Navbar() {
             href={WEB_APP_HREF}
             className={cn(
               buttonVariants({ variant: "outline", size: "sm" }),
-              "gap-1.5 rounded-full border-[var(--border-glow)] text-foreground transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-ring hover:shadow-[var(--shadow-glow)]"
+              "hidden gap-1.5 rounded-full border-[var(--border-glow)] text-foreground transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-ring hover:shadow-[var(--shadow-glow)] lg:inline-flex"
             )}
           >
             <Sparkles className="size-4 text-accent-foreground" />
