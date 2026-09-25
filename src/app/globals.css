@@ -203,5 +203,6 @@
   html {
     @apply font-sans;
     overflow-x: clip;
+    scroll-behavior: smooth;
   }
 }
