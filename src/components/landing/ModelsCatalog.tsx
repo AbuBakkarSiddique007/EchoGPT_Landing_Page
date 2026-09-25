@@ -470,9 +470,8 @@ export function ModelsCatalog() {
                 <p className="text-sm text-muted-foreground">{m.blurb}</p>
                 <dl
                   className={cn(
-                    "mt-auto grid grid-cols-2 gap-2 overflow-hidden transition-all duration-300",
-                    "max-h-40 opacity-100",
-                    "md:max-h-0 md:translate-y-1 md:opacity-0 md:group-hover:max-h-44 md:group-hover:translate-y-0 md:group-hover:opacity-100"
+                    "mt-auto grid grid-cols-2 gap-2",
+                    "max-h-44 opacity-100"
                   )}
                 >
                   <div className="rounded-lg bg-surface-elev px-3 py-2">

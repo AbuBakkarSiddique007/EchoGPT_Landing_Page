@@ -9,6 +9,7 @@ import { Pricing } from "@/components/landing/Pricing";
 import { Faq } from "@/components/landing/Faq";
 import { Testimonials } from "@/components/landing/Testimonials";
 import { FinalCta } from "@/components/landing/FinalCta";
+import { Footer } from "@/components/landing/Footer";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <Testimonials />
         <FinalCta />
       </main>
+      <Footer />
     </div>
   );
 }
