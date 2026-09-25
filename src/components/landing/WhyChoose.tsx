@@ -95,8 +95,8 @@ export function WhyChoose() {
     <section id="compare" className="scroll-mt-24 px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto flex max-w-2xl flex-col items-center gap-3 text-center">
-          <span className="text-xs font-semibold tracking-[0.08em] text-accent-foreground uppercase">
-            Why Echo GPT
+          <span className="font-mono text-xs tracking-[0.22em] text-accent-foreground uppercase">
+            {"// Why Echo GPT"}
           </span>
           <h2 className="text-balance text-3xl font-bold tracking-[-0.02em] text-foreground sm:text-4xl">
             Every model. One subscription.
@@ -112,7 +112,7 @@ export function WhyChoose() {
         <div className="mt-8 mx-auto max-w-5xl">
           <Card className="overflow-hidden transition-all duration-300 hover:border-[var(--border-glow)] hover:shadow-[var(--shadow-glow)]">
             <div className="overflow-x-auto">
-              <table className="w-full min-w-[42rem] border-collapse text-sm">
+              <table className="w-full min-w-0 table-fixed border-collapse break-words text-sm max-sm:text-xs max-sm:[&_td]:px-2 max-sm:[&_th]:px-2 sm:min-w-[42rem] sm:table-auto">
                 <thead>
                   <tr className="border-b border-border/60">
                     <th className="px-4 py-4 text-left text-xs font-medium tracking-[0.08em] text-muted-foreground uppercase">
@@ -121,9 +121,9 @@ export function WhyChoose() {
                     {HERO_COLUMNS.map((name, i) => (
                       <th
                         key={name}
-                        className={cn("px-4 py-4 text-left", i === 0 && "bg-primary/5")}
+                        className={cn("min-w-0 px-4 py-4 text-left", i === 0 && "bg-primary/5")}
                       >
-                        <div className="flex items-center gap-2">
+                        <div className="flex min-w-0 flex-wrap items-center gap-2">
                           {i === 0 ? (
                             <Badge className="gap-1">
                               <Crown className="size-3" />
