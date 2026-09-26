@@ -5,3 +5,5 @@ export const API_DOCS_HREF = "https://api.echogpt.live";
 export const DOCS_HREF = "https://platform.echogpt.live/";
 export const API_REFERENCE_HREF = "https://platform.echogpt.live/api-reference";
 export const PRICING_HREF = "https://platform.echogpt.live/pricing";
+export const GITHUB_HREF =
+  "https://github.com/AbuBakkarSiddique007/EchoGPT_Landing_Page";
