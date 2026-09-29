@@ -16,7 +16,7 @@ export function FinalCta() {
           />
           <div
             aria-hidden
-            className="pointer-events-none absolute -top-28 left-1/2 -z-10 h-72 w-[36rem] max-w-[90%] -translate-x-1/2 rounded-full opacity-60 blur-3xl [background:var(--echo-aura-violet)]"
+            className="pointer-events-none absolute -top-28 left-1/2 -z-10 h-72 w-[36rem] max-w-[90%] -translate-x-1/2 rounded-full opacity-60 [background:radial-gradient(circle,var(--echo-aura-violet),transparent_70%)]"
           />
           <div className="relative mx-auto flex max-w-2xl flex-col items-center gap-5 px-6 py-14 text-center sm:px-12 sm:py-16 lg:py-20">
             <span className="font-mono text-xs tracking-[0.22em] text-accent-foreground uppercase">
