@@ -108,7 +108,7 @@ export function Footer() {
               The unified AI workspace by AppifyDevs.
             </p>
             <p className="mt-3 font-mono text-xs text-muted-foreground/80">
-              38+ frontier models / one interface.
+              41+ frontier models / one interface.
             </p>
           </div>
 
@@ -120,7 +120,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row">
           <p>© 2026 EchoGPT | Developed by AppifyDevs.</p>
-          <p className="font-mono">38+ models / one API / &lt;0.8s</p>
+          <p className="font-mono">41+ models / one API / &lt;0.8s</p>
         </div>
       </div>
     </footer>

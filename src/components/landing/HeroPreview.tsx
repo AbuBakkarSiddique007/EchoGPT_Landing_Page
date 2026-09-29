@@ -68,7 +68,7 @@ export function HeroPreview() {
   const streaming = stage === "answer" && r < RESPONSE.length;
 
   return (
-    <div className="relative w-full overflow-hidden rounded-2xl border border-border/60 bg-surface/80 shadow-[var(--shadow-lg)] backdrop-blur-md">
+    <div className="relative w-full overflow-hidden rounded-2xl border border-border/60 bg-surface/80 shadow-[var(--echo-shadow-lg)] backdrop-blur-md">
       <div className="flex items-center gap-2 border-b border-border/60 bg-background/40 px-4 py-2.5">
         <span className="size-2.5 rounded-full bg-[#ff5f57]" />
         <span className="size-2.5 rounded-full bg-[#febc2e]" />

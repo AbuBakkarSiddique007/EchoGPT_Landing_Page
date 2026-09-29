@@ -7,7 +7,7 @@ import {
 
 const FAQS: { question: string; answer: string }[] = [
   {
-    question: "What is EchoGPT and how does it give me access to 38+ models?",
+    question: "What is EchoGPT and how does it give me access to 41+ models?",
     answer:
       "EchoGPT aggregates the world's most capable foundation models under one unified interface, routing your prompt to the best model or letting you pick manually.",
   },

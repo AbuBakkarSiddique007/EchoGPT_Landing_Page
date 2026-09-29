@@ -2,10 +2,8 @@
 
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useSyncExternalStore } from "react";
+import { THEME_KEY, type Theme } from "@/lib/theme";
 
-type Theme = "dark" | "light";
-
-const THEME_KEY = "echogpt-theme";
 const THEME_ORDER: Theme[] = ["dark", "light"];
 const THEME_ICONS = {
   dark: Moon,
