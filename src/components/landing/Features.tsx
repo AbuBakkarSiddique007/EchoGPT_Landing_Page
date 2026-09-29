@@ -37,7 +37,7 @@ export function Features() {
           <Card
             className={cn(
               "sm:col-span-2 sm:row-span-2",
-              "transition-all duration-300 hover:-translate-y-1 hover:ring-[var(--border-glow)] hover:shadow-[var(--shadow-glow)]"
+              "transition-all duration-300 hover:-translate-y-1 hover:ring-[var(--border-glow)] hover:shadow-[var(--echo-shadow-glow)]"
             )}
           >
             <CardContent className="flex h-full flex-col gap-3">
@@ -58,7 +58,7 @@ export function Features() {
           <Card
             className={cn(
               "sm:col-span-2",
-              "transition-all duration-300 hover:-translate-y-1 hover:ring-[var(--border-glow)] hover:shadow-[var(--shadow-glow)]"
+              "transition-all duration-300 hover:-translate-y-1 hover:ring-[var(--border-glow)] hover:shadow-[var(--echo-shadow-glow)]"
             )}
           >
             <CardContent className="flex h-full flex-col gap-3">
@@ -93,7 +93,7 @@ export function Features() {
 
           <Card
             className={cn(
-              "transition-all duration-300 hover:-translate-y-1 hover:ring-[var(--border-glow)] hover:shadow-[var(--shadow-glow)]"
+              "transition-all duration-300 hover:-translate-y-1 hover:ring-[var(--border-glow)] hover:shadow-[var(--echo-shadow-glow)]"
             )}
           >
             <CardContent className="flex h-full flex-col gap-3">
@@ -111,7 +111,7 @@ export function Features() {
 
           <Card
             className={cn(
-              "transition-all duration-300 hover:-translate-y-1 hover:ring-[var(--border-glow)] hover:shadow-[var(--shadow-glow)]"
+              "transition-all duration-300 hover:-translate-y-1 hover:ring-[var(--border-glow)] hover:shadow-[var(--echo-shadow-glow)]"
             )}
           >
             <CardContent className="flex h-full flex-col gap-3">
@@ -134,7 +134,7 @@ export function Features() {
           <Card
             className={cn(
               "sm:col-span-2 lg:col-span-4",
-              "transition-all duration-300 hover:-translate-y-1 hover:ring-[var(--border-glow)] hover:shadow-[var(--shadow-glow)]"
+              "transition-all duration-300 hover:-translate-y-1 hover:ring-[var(--border-glow)] hover:shadow-[var(--echo-shadow-glow)]"
             )}
           >
             <CardContent className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">

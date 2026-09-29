@@ -25,7 +25,7 @@ const TESTIMONIALS: Testimonial[] = [
   },
   {
     quote:
-      "I used to cross-check every claim across four chat apps. EchoGPT puts all 38+ models in one interface, so the verification loop finally ended.",
+      "I used to cross-check every claim across four chat apps. EchoGPT puts all 41+ models in one interface, so the verification loop finally ended.",
     name: "Sofia Lindgren",
     role: "Content Researcher",
     avatar: "https://randomuser.me/api/portraits/women/68.jpg",

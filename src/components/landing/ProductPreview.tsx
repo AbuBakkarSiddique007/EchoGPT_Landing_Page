@@ -120,16 +120,16 @@ export function ProductPreview() {
         </div>
 
         <div className="relative mx-auto mt-12 max-w-4xl">
-          <div className="pointer-events-none absolute top-10 -left-4 hidden rounded-full border border-border/60 bg-surface/80 px-3.5 py-2 text-xs font-medium text-foreground/80 shadow-[var(--shadow-lg)] backdrop-blur-md md:flex md:items-center md:gap-2">
+          <div className="pointer-events-none absolute top-10 -left-4 hidden rounded-full border border-border/60 bg-surface/80 px-3.5 py-2 text-xs font-medium text-foreground/80 shadow-[var(--echo-shadow-lg)] backdrop-blur-md md:flex md:items-center md:gap-2">
             <Zap className="size-3.5 text-accent-foreground" />
             Real-time Multi-Model Routing
           </div>
-          <div className="pointer-events-none absolute top-28 -right-4 z-20 hidden rounded-full border border-border/60 bg-surface/80 px-3.5 py-2 text-xs font-medium text-foreground/80 shadow-[var(--shadow-lg)] backdrop-blur-md lg:flex lg:items-center lg:gap-2">
+          <div className="pointer-events-none absolute top-28 -right-4 z-20 hidden rounded-full border border-border/60 bg-surface/80 px-3.5 py-2 text-xs font-medium text-foreground/80 shadow-[var(--echo-shadow-lg)] backdrop-blur-md lg:flex lg:items-center lg:gap-2">
             <LayoutPanelLeft className="size-3.5 text-accent-foreground" />
             1-Click Browser Sidepanel
           </div>
 
-          <div className="overflow-hidden rounded-2xl border border-border/60 bg-surface/80 shadow-[var(--shadow-xl)] backdrop-blur-md">
+          <div className="overflow-hidden rounded-2xl border border-border/60 bg-surface/80 shadow-[var(--echo-shadow-xl)] backdrop-blur-md">
             <div className="flex items-center gap-2 border-b border-border/60 bg-background/40 px-4 py-2.5">
               <span className="size-2.5 rounded-full bg-[#ff5f57]" />
               <span className="size-2.5 rounded-full bg-[#febc2e]" />
@@ -252,7 +252,7 @@ export function ProductPreview() {
             </div>
           </div>
 
-          <div className="pointer-events-none absolute -right-3 bottom-6 z-10 hidden w-56 rounded-xl border border-border/60 bg-surface/90 p-3 shadow-[var(--shadow-xl)] backdrop-blur-md sm:block">
+          <div className="pointer-events-none absolute -right-3 bottom-6 z-10 hidden w-56 rounded-xl border border-border/60 bg-surface/90 p-3 shadow-[var(--echo-shadow-xl)] backdrop-blur-md sm:block">
             <div className="flex items-center gap-2 border-b border-border/50 pb-2">
               <Image
                 src="/logo-echogpt.svg"

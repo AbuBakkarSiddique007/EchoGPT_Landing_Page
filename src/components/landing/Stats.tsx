@@ -2,7 +2,7 @@ import { Star, Timer, Users, Zap } from "lucide-react";
 
 const STATS = [
   { icon: Star, value: "4.9/5", label: "Rating on Chrome Store" },
-  { icon: Zap, value: "38+", label: "Models Active" },
+  { icon: Zap, value: "41+", label: "Models Active" },
   { icon: Timer, value: "<0.8s", label: "First-Token Latency" },
   { icon: Users, value: "50,000+", label: "Active Users" },
 ];

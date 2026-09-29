@@ -20,7 +20,7 @@ const ROWS: Row[] = [
   {
     feature: "Model Selection",
     cells: [
-      { kind: "text", value: "38+ Frontier Models" },
+      { kind: "text", value: "41+ Frontier Models" },
       { kind: "text", value: "OpenAI Only" },
       { kind: "text", value: "Anthropic Only" },
       { kind: "text", value: "Limited (3-4 models)" },
@@ -110,7 +110,7 @@ export function WhyChoose() {
         <Separator className="mx-auto mt-12 w-full max-w-5xl" />
 
         <div className="mt-8 mx-auto max-w-5xl">
-          <Card className="overflow-hidden transition-all duration-300 hover:border-[var(--border-glow)] hover:shadow-[var(--shadow-glow)]">
+          <Card className="overflow-hidden transition-all duration-300 hover:border-[var(--border-glow)] hover:shadow-[var(--echo-shadow-glow)]">
             <div className="overflow-x-auto">
               <table className="w-full min-w-0 table-fixed border-collapse break-words text-sm max-sm:text-xs max-sm:[&_td]:px-2 max-sm:[&_th]:px-2 sm:min-w-[42rem] sm:table-auto">
                 <thead>
@@ -180,7 +180,7 @@ export function WhyChoose() {
           </Card>
 
           <p className="mt-6 text-center text-sm text-muted-foreground">
-            Pricing as per current product tiers. Pro unlocks all 38+ models,
+            Pricing as per current product tiers. Pro unlocks all 41+ models,
             unlimited chats, Echo Compare, Studios, and API credits.
           </p>
         </div>

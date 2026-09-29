@@ -416,7 +416,7 @@ export function ModelsCatalog() {
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto flex max-w-2xl flex-col items-center gap-3 text-center">
           <span className="font-mono text-xs tracking-[0.22em] text-accent-foreground uppercase">
-            {"// Models (38+)"}
+            {"// Models (41+)"}
           </span>
           <h2 className="text-balance text-3xl font-bold tracking-[-0.02em] text-foreground sm:text-4xl">
             Every frontier model. One interface.
@@ -441,7 +441,7 @@ export function ModelsCatalog() {
                 className={cn(
                   "rounded-full border px-3.5 py-1.5 text-sm font-medium transition-all duration-300",
                   selected
-                    ? "border-[var(--border-glow)] bg-primary/10 text-foreground shadow-[var(--shadow-glow)]"
+                    ? "border-[var(--border-glow)] bg-primary/10 text-foreground shadow-[var(--echo-shadow-glow)]"
                     : "border-border bg-surface text-muted-foreground hover:border-[var(--border-glow)] hover:text-foreground"
                 )}
               >
@@ -456,7 +456,7 @@ export function ModelsCatalog() {
           {visible.map((m) => (
             <Card
               key={m.name}
-              className="group flex flex-col transition-all duration-300 hover:-translate-y-0.5 hover:ring-[var(--border-glow)] hover:shadow-[var(--shadow-glow)]"
+              className="group flex flex-col transition-all duration-300 hover:-translate-y-0.5 hover:ring-[var(--border-glow)] hover:shadow-[var(--echo-shadow-glow)]"
             >
               <CardContent className="flex h-full flex-col gap-3 p-5">
                 <div className="flex items-start justify-between gap-3">
