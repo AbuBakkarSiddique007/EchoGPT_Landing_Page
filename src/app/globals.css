@@ -191,6 +191,13 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
     background-image: radial-gradient(
         55rem 32rem at 12% -10%,
         var(--echo-aura-violet),
@@ -198,7 +205,6 @@
       ),
       radial-gradient(46rem 30rem at 105% 0%, var(--echo-aura-azure), transparent 60%),
       radial-gradient(52rem 38rem at 50% 118%, var(--echo-aura-magenta), transparent 62%);
-    background-attachment: fixed;
   }
   html {
     @apply font-sans;
