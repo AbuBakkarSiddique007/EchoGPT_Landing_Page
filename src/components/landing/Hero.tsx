@@ -11,15 +11,15 @@ export function Hero() {
     <section className="relative flex min-h-[calc(100svh-4rem)] flex-col justify-center overflow-hidden px-4 pt-8 pb-16 text-left sm:px-6 sm:pt-16 sm:pb-20 lg:px-8 lg:pt-24 lg:pb-24">
       <div
         aria-hidden
-        className="pointer-events-none absolute left-1/2 top-[-16rem] -z-10 h-[44rem] w-[min(44rem,100vw)] -translate-x-1/2 rounded-full blur-2xl [background:radial-gradient(circle,var(--echo-brand-glow),transparent_65%)]"
+        className="pointer-events-none absolute left-1/2 top-[-16rem] -z-10 h-[44rem] w-[min(44rem,100vw)] -translate-x-1/2 rounded-full [background:radial-gradient(circle,var(--echo-brand-glow),transparent_70%)]"
       />
       <div
         aria-hidden
-        className="animate-orb-pulse pointer-events-none absolute top-20 -left-20 -z-10 h-72 w-72 rounded-full opacity-60 blur-3xl [background:var(--echo-aura-azure)]"
+        className="animate-orb-pulse pointer-events-none absolute top-20 -left-20 -z-10 h-72 w-72 rounded-full opacity-60 [background:radial-gradient(circle,var(--echo-aura-azure),transparent_70%)]"
       />
       <div
         aria-hidden
-        className="animate-orb-pulse pointer-events-none absolute -right-20 bottom-16 -z-10 h-80 w-80 rounded-full opacity-50 blur-3xl [background:var(--echo-aura-magenta)]"
+        className="animate-orb-pulse pointer-events-none absolute -right-20 bottom-16 -z-10 h-80 w-80 rounded-full opacity-50 [background:radial-gradient(circle,var(--echo-aura-magenta),transparent_70%)]"
       />
 
       <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-14">
