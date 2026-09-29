@@ -129,7 +129,7 @@ export function ComparePreview() {
       <span
         className={cn(
           "absolute top-1/2 left-1/2 inline-flex -translate-x-1/2 -translate-y-1/2 items-center gap-1 rounded-full border border-[var(--border-glow)] px-2 py-0.5 text-[10px] font-bold whitespace-nowrap text-accent-foreground transition-all duration-300",
-          verdict && "bg-primary/20 shadow-[var(--shadow-glow)]"
+          verdict && "bg-primary/20 shadow-[var(--echo-shadow-glow)]"
         )}
       >
         {verdict ? (

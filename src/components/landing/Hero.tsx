@@ -29,7 +29,7 @@ export function Hero() {
             className="gap-2 rounded-full border-[var(--border-glow)] bg-surface/70 px-3 py-1 text-xs font-medium text-foreground/75 shadow-sm backdrop-blur-sm"
           >
             <span className="size-1.5 animate-pulse rounded-full bg-emerald-400" />
-            One workspace for 38+ frontier models
+            One workspace for 41+ frontier models
           </Badge>
           <h1 className="flex flex-col text-balance text-4xl font-bold leading-[1.12] tracking-[-0.02em] text-foreground sm:text-5xl">
             <span className="animate-gradient-x bg-clip-text text-5xl font-extrabold tracking-[-0.03em] text-transparent [background-image:var(--echo-gradient-primary)] sm:text-6xl">
@@ -37,7 +37,7 @@ export function Hero() {
             </span>
             <span className="mt-2 sm:mt-3">One Chat Interface.</span>
             <span>
-              38+ <span className="text-accent-foreground">World-Class AI Models</span>.
+              41+ <span className="text-accent-foreground">World-Class AI Models</span>.
             </span>
           </h1>
 
@@ -57,7 +57,7 @@ export function Hero() {
               }
               nativeButton={false}
               size="lg"
-              className="h-12 w-full justify-center rounded-full border-primary/30 bg-primary px-6 text-base text-primary-foreground shadow-[var(--shadow-glow)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-lg active:scale-[0.98] sm:w-auto"
+              className="h-12 w-full justify-center rounded-full border-primary/30 bg-primary px-6 text-base text-primary-foreground shadow-[var(--echo-shadow-glow)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-lg active:scale-[0.98] sm:w-auto"
             >
               <ChromeIcon className="size-4" />
               Add to Chrome
@@ -67,7 +67,7 @@ export function Hero() {
               nativeButton={false}
               variant="outline"
               size="lg"
-              className="h-12 w-full justify-center rounded-full border-[var(--border-glow)] bg-surface/60 px-6 text-base transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-ring hover:bg-muted hover:shadow-[var(--shadow-glow)] sm:w-auto"
+              className="h-12 w-full justify-center rounded-full border-[var(--border-glow)] bg-surface/60 px-6 text-base transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-ring hover:bg-muted hover:shadow-[var(--echo-shadow-glow)] sm:w-auto"
             >
               <Sparkles className="size-4 text-accent-foreground" />
               Try EchoGPT in Browser

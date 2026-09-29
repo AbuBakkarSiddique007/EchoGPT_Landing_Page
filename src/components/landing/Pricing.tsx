@@ -59,7 +59,7 @@ const TIERS: Tier[] = [
         label: "Includes",
         items: [
           "Unlimited messages with zero cooldowns",
-          "All 38+ advanced frontier models",
+          "All 41+ advanced frontier models",
           "Side-by-Side Echo Compare Mode",
           "High-resolution Image & Video Studio",
         ],
@@ -108,7 +108,7 @@ export function Pricing() {
             Simple plans. Serious models.
           </h2>
           <p className="text-pretty mt-5 text-base text-muted-foreground sm:text-lg">
-            One workspace, all 38+ frontier models. Start free for tinkering,
+            One workspace, all 41+ frontier models. Start free for tinkering,
             upgrade when the cooldowns get in the way.
           </p>
         </div>

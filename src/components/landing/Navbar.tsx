@@ -49,7 +49,7 @@ export function Navbar() {
           className="group flex shrink-0 items-center gap-2.5 rounded-full focus-visible:ring-2 focus-visible:ring-ring"
           aria-label="EchoGPT - Home"
         >
-          <span className="relative flex size-10 items-center justify-center rounded-xl border border-[var(--border-glow)] bg-surface p-0.5 shadow-[var(--shadow-glow)] transition-transform duration-300 group-hover:scale-[1.04]">
+          <span className="relative flex size-10 items-center justify-center rounded-xl border border-[var(--border-glow)] bg-surface p-0.5 shadow-[var(--echo-shadow-glow)] transition-transform duration-300 group-hover:scale-[1.04]">
             <span className="absolute inset-0 rounded-xl opacity-70 [background:var(--echo-gradient-primary)]" />
             <Image
               src="/logo-echogpt.svg"
@@ -72,7 +72,7 @@ export function Navbar() {
 
         <nav
           aria-label="Main"
-          className="hidden items-center gap-0 rounded-full border border-border/80 bg-surface/90 p-1 shadow-[var(--shadow-md)] backdrop-blur-xl md:flex"
+          className="hidden items-center gap-0 rounded-full border border-border/80 bg-surface/90 p-1 shadow-[var(--echo-shadow-md)] backdrop-blur-xl md:flex"
         >
           {NAV_LINKS.map((link) => (
             <Link

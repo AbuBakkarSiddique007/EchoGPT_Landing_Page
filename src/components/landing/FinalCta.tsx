@@ -23,7 +23,7 @@ export function FinalCta() {
               {"// Get Started"}
             </span>
             <h2 className="text-balance text-3xl font-bold tracking-[-0.02em] text-foreground sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
-              Ready to Supercharge Your Workflow with 38+ AI Models?
+              Ready to Supercharge Your Workflow with 41+ AI Models?
             </h2>
             <p className="text-pretty text-base text-muted-foreground sm:text-lg">
               Install the Chrome extension in 10 seconds or launch the web app
